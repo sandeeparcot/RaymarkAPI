@@ -22,11 +22,8 @@ class Quantity(Resource):
                "inner join ELHK_UAT..product p (nolock) "
                "on p.Product_id = pn.product_id "
                "where s.store_code = '%s' and p.product_code = '%s'"
-               "group by store_code, product_code;" % (str(scode)  , str(pcode)))# This line performs query and returns json result
+               "group by store_code, product_code;" % (str(scode), str(pcode)))# This line performs query and returns json result
 
-        #StoreCode = {'Store Code': [i[0] for i in query.fetchall()]}
-        #SKU = {'6 digit SKU': [j[1] for j in query.fetchall()]}
-        #Qty = {'Quantity': [k[2] for k in query.fetchall()]}  # Fetches
 
         for i in query.fetchall():
             result = {'Store Code': [i[0]],'6 digit SKU': [i[1]], 'Quantity': [i[2]]}
