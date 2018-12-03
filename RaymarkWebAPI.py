@@ -10,7 +10,7 @@ api = Api(app)
 
 
 class Quantity(Resource):
-    def get(self,pcode):
+    def get(self,scode,pcode):
         cnxn = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
                               "Server=HK-KWN-RPTST01\IZ_UAT;"
                               "Database=ELHK_UAT;"
@@ -21,14 +21,20 @@ class Quantity(Resource):
                "from ELHK_UAT..product_now pn (nolock) inner join ELHK_UAT..store s (nolock)on pn.store_code_id = s.store_code_id "
                "inner join ELHK_UAT..product p (nolock) "
                "on p.Product_id = pn.product_id "
-               "where s.store_code = 'CL52' and p.product_code = '%s'"
-               "group by store_code, product_code;" % str(pcode))# This line performs query and returns json result
+               "where s.store_code = '%s' and p.product_code = '%s'"
+               "group by store_code, product_code;" % (str(scode)  , str(pcode)))# This line performs query and returns json result
 
-        result = {'qtyonhand': [i[2] for i in query.fetchall()]}  # Fetches
+        #StoreCode = {'Store Code': [i[0] for i in query.fetchall()]}
+        #SKU = {'6 digit SKU': [j[1] for j in query.fetchall()]}
+        #Qty = {'Quantity': [k[2] for k in query.fetchall()]}  # Fetches
+
+        for i in query.fetchall():
+            result = {'Store Code': [i[0]],'6 digit SKU': [i[1]], 'Quantity': [i[2]]}
+
         print(result)
         return jsonify(result)
 
-api.add_resource(Quantity, '/qtyonhand/CL52/<pcode>')  # Route_1
+api.add_resource(Quantity, '/qtyonhand/<scode>/<pcode>')  # Route_1
 
 
 if __name__ == '__main__':
