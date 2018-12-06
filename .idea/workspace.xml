@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="555b5467-d4bd-44fb-a54a-239dc0e98956" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DBClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/DBClass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RaymarkWebAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/RaymarkWebAPI.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,28 +22,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="1" />
-          <entry key="py" value="9" />
+          <entry key="py" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
-          <entry key="Python" value="9" />
+          <entry key="Python" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="58" />
           <entry key="md" value="11" />
-          <entry key="py" value="2608" />
-          <entry key="txt" value="120" />
+          <entry key="py" value="3035" />
+          <entry key="txt" value="163" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="11" />
-          <entry key="PLAIN_TEXT" value="120" />
-          <entry key="Python" value="2666" />
+          <entry key="PLAIN_TEXT" value="163" />
+          <entry key="Python" value="3093" />
         </counts>
       </usages-collector>
     </session>
@@ -54,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RaymarkWebAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="399">
+              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -66,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://C:/Python27/Lib/site-packages/flask_restful/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="594" selection-start-line="594" selection-end-line="594" />
+            <state relative-caret-position="247">
+              <caret line="598" lean-forward="true" selection-start-line="598" selection-end-line="598" />
             </state>
           </provider>
         </entry>
@@ -84,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DBClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="273">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -283,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543831529250</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Validations and handled exceptions">
+      <created>1544079389970</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1544079389971</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -318,32 +324,11 @@
     <MESSAGE value="no changes" />
     <MESSAGE value="Added the class for fetching the quantity" />
     <MESSAGE value="Added the class for fetching the quantity and show all the conditions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the class for fetching the quantity and show all the conditions" />
+    <MESSAGE value="Added Validations and handled exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Validations and handled exceptions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DBClass.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DBClass.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/RaymarkWebAPI.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DBClass.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -393,24 +378,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/flask_restful/__init__.py">
+    <entry file="file://$PROJECT_DIR$/DBClass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="594" selection-start-line="594" selection-end-line="594" />
+        <state relative-caret-position="273">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DBClass.py">
+    <entry file="file://C:/Python27/Lib/site-packages/flask_restful/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="247">
+          <caret line="598" lean-forward="true" selection-start-line="598" selection-end-line="598" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RaymarkWebAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="399">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
