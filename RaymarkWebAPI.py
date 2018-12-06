@@ -37,10 +37,8 @@ class Quantity(Resource):
         else:
             return {'Error': ['No Data']}
 
-        result = {"Error": [], "InventoryQty": qty, "Store Code": scode, "SKU": pcode,
-                "Last_Polled_Date": now.strftime('%Y-%m-%d %H:%M:%S'), "Hist_Day_Date": 'null', "status": 'success',
-                "type": 'success', "code": '200'}
-        return result
+        result = ({"Error": [], "InventoryQty": qty, "Store Code": scode, "SKU": pcode,"Last_Polled_Date": now.strftime('%Y-%m-%d %H:%M:%S'), "Hist_Day_Date": 'null', "status": 'success',"type": 'success', "code": '200'})
+        return jsonify(result)
 
 api.add_resource(Quantity, '/onhandinventory/<scode>/<pcode>')  # Route_1
 
